@@ -16,8 +16,7 @@ I build automation systems that help businesses scale operations using AI, APIs,
 ## Featured Projects
 
 ### Email Marketing Automation
-
-Automated B2B outreach pipeline built with n8n and Google Sheets.
+N8N workflows designed to automate a multi-step cold email outreach campaign. It uses Google Sheets as a central tracking system and Gmail for deliverability.
 
 ### AI Blog Automation
 
