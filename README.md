@@ -11,7 +11,7 @@ I build automation systems that help businesses scale operations using AI, APIs,
 • AI API Integrations\
 • Web Scraping & Data Pipelines\
 • Ecommerce Automation\
-• Lead Generation Systems\
+• Lead Generation Systems
 
 ## Featured Projects
 
@@ -41,13 +41,13 @@ n8n\
 REST APIs\
 Web Scraping\
 AI APIs\
-WordPress / WooCommerce\
+WordPress / WooCommerce
 
 ## Open to
 
 Automation Engineer roles\
 AI Automation Specialist roles\
-Workflow Automation roles\
+Workflow Automation roles
 
 ## Workflow Overview
 
