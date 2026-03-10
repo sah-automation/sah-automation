@@ -49,3 +49,7 @@ WordPress / WooCommerce
 Automation Engineer roles
 AI Automation Specialist roles
 Workflow Automation roles
+
+## Workflow Overview
+
+![automa-product-scraper](screenshots/automa-product-scraper.png)
