@@ -18,21 +18,21 @@ I build automation systems that help businesses scale operations using AI, APIs,
 ### Email Marketing Automation
 N8N workflows designed to automate a multi-step cold email outreach campaign. It uses Google Sheets as a central tracking system and Gmail for deliverability.
 
-### AI Blog Automation
+### AI Wordpress Blog Automation
 
-Automated blog content generation and publishing system using AI and WordPress API.
+An advanced n8n workflow that automates the entire content lifecycle: from SEO-driven research and planning to professional writing, styled HTML formatting, and WordPress publishing.
 
-### Ecommerce Product Automation System
+### Woocommerce Product Automation System
 
-Large scale automation system that scrapes supplier product data, optimizes with AI, and publishes to WooCommerce using REST API.
+Large scale automation system that scrapes supplier product data, optimizes with AI, and publishes to WooCommerce using REST API. This system streamlines the process of extracting complex product details, including variations, attributes, and high-quality images.
 
 ### Google Maps Lead Generation Automation
 
-Lead scraping and enrichment system using Google Places API and AI data processing.
+An automated, end-to-end lead generation pipeline built on n8n. It intelligently sources business leads from Google Maps, conducts deep prospect research using Google Gemini, and verifies email deliverability via the Reoon API.
 
-### AI Voice Assistant (Vapi)
+### Ecommerce AI Voice Assistant
 
-Website AI assistant integrated with voice agent automation.
+An advanced AI-powered voice assistant designed for ecommerce store. This system leverages Vapi for high-fidelity voice interactions and n8n for robust backend automation, integrating directly with WooCommerce and multiple AI models.
 
 ## Tech Stack
 
