@@ -53,3 +53,16 @@ Workflow Automation roles
 ## Workflow Overview
 
 ![automa-product-scraper](screenshots/automa-product-scraper.png)
+![email-opt-out](screenshots/email-opt-out.png)
+![first-email-workflow](screenshots/first-email-workflow.png)
+![first-follow-up-email-workflow](screenshots/first-follow-up-email-workflow.png)
+![second-follow-up-email-workflow](screenshots/second-follow-up-email-workflow.png)
+![vapi-call-start-end-tool](screenshots/vapi-call-start-end-tool.png)
+![vapi-get-order-tool](screenshots/vapi-get-order-tool.png)
+![vapi-get-product-tool](screenshots/vapi-get-product-tool.png)
+![vapi-internet-search-tool](screenshots/vapi-internet-search-tool.png)
+![vapi-send-email-to support-team-tool](screenshots/vapi-send-email-to support-team-tool.png)
+![vapi-send-email-to user-tool](screenshots/vapi-send-email-to user-tool.png)
+![vapi-send-supplier-email-support-team-tool](screenshots/vapi-send-supplier-email-support-team-tool.png)
+![wordpress-auto-blog-posting-n8n-workflow](screenshots/wordpress-auto-blog-posting-n8n-workflow.png)
+![workflow-screenshot](screenshots/workflow-screenshot.png)
