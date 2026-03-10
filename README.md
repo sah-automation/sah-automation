@@ -6,8 +6,8 @@ I build automation systems that help businesses scale operations using AI, APIs,
 
 ## Core Skills
 
-• Workflow Automation (n8n)
-• Python Automation Scripts
+• Workflow Automation (n8n)\
+• Python Automation Scripts\
 • AI API Integrations
 • Web Scraping & Data Pipelines
 • Ecommerce Automation
