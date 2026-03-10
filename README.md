@@ -25,10 +25,38 @@ An advanced n8n workflow that automates the entire content lifecycle: from SEO-d
 ### Woocommerce Product Automation System
 
 Large scale automation system that scrapes supplier product data, optimizes with AI, and publishes to WooCommerce using REST API. This system streamlines the process of extracting complex product details, including variations, attributes, and high-quality images.
+```mermaid
+graph TD
+    A[LuxeDecor Website] -->|Browser Automation| B(Automa Scraper)
+    B -->|Structured Extraction| C[data/LuxeDecor2Woo-listing-data.csv]
+    C -->|Input| D(Google Colab Notebook / Python)
+    D -->|WooCommerce REST API| E[WooCommerce Store]
+    
+    subgraph "Data Extraction Layer"
+    B
+    end
+    
+    subgraph "Data Storage"
+    C
+    end
+    
+    subgraph "Integration Layer"
+    D
+    E
+    end
+```
 
 ### Google Maps Lead Generation Automation
 
 An automated, end-to-end lead generation pipeline built on n8n. It intelligently sources business leads from Google Maps, conducts deep prospect research using Google Gemini, and verifies email deliverability via the Reoon API.
+```mermaid
+graph TD
+    A[Manual Trigger] --> B[Step 1: Lead Sourcing]
+    B --> C[Step 2: Data Structuring]
+    C --> D[Step 3: AI Prospect Research]
+    D --> E[Step 4: Email Verification]
+    E --> F[Final Outreach Data]
+```
 
 ### Ecommerce AI Voice Assistant
 
