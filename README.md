@@ -17,7 +17,7 @@ I build automation systems that help businesses scale operations using AI, APIs,
 
 ### Email Marketing Automation
 N8N workflows designed to automate a multi-step cold email outreach campaign. It uses Google Sheets as a central tracking system and Gmail for deliverability.
-[Email Outreach Automation with n8n](./email-marketing-automation-n8n)
+[Email Outreach Automation with n8n](https://github.com/sah-automation/email-marketing-automation-n8n)
 
 ### AI Wordpress Blog Automation
 
