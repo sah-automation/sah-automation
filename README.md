@@ -8,10 +8,10 @@ I build automation systems that help businesses scale operations using AI, APIs,
 
 • Workflow Automation (n8n)\
 • Python Automation Scripts\
-• AI API Integrations
-• Web Scraping & Data Pipelines
-• Ecommerce Automation
-• Lead Generation Systems
+• AI API Integrations\
+• Web Scraping & Data Pipelines\
+• Ecommerce Automation\
+• Lead Generation Systems\
 
 ## Featured Projects
 
@@ -36,18 +36,18 @@ An advanced AI-powered voice assistant designed for ecommerce store. This system
 
 ## Tech Stack
 
-Python
-n8n
-REST APIs
-Web Scraping
-AI APIs
-WordPress / WooCommerce
+Python\
+n8n\
+REST APIs\
+Web Scraping\
+AI APIs\
+WordPress / WooCommerce\
 
 ## Open to
 
-Automation Engineer roles
-AI Automation Specialist roles
-Workflow Automation roles
+Automation Engineer roles\
+AI Automation Specialist roles\
+Workflow Automation roles\
 
 ## Workflow Overview
 
