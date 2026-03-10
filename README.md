@@ -33,6 +33,21 @@ An automated, end-to-end lead generation pipeline built on n8n. It intelligently
 ### Ecommerce AI Voice Assistant
 
 An advanced AI-powered voice assistant designed for ecommerce store. This system leverages Vapi for high-fidelity voice interactions and n8n for robust backend automation, integrating directly with WooCommerce and multiple AI models.
+```mermaid
+graph TD
+    User((User)) <--> Vapi[Vapi Voice AI]
+    Vapi -- Webhook (Tool Call) --> n8n[n8n Automation Engine]
+    
+    subgraph n8n Workflows
+        n8n --> Woo[WooCommerce API]
+        n8n --> Perp[Perplexity AI / Search]
+        n8n --> Gemini[Google Gemini / LLM]
+        n8n --> SMTP[SMTP / Email]
+    end
+    
+    Woo <--> DB[(WooCommerce Store)]
+    Perp <--> Web((Internet))
+```
 
 ## Tech Stack
 
