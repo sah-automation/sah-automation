@@ -55,7 +55,7 @@ An automated, end-to-end lead generation pipeline built on n8n. It intelligently
 [AI-Powered Lead Generation Engine](https://github.com/sah-automation/b2b-lead-generation)
 ```mermaid
 graph TD
-    A[Manual Trigger] --> B[Step 1: Lead Sourcing]
+    A[Trigger] --> B[Step 1: Lead Sourcing]
     B --> C[Step 2: Data Structuring]
     C --> D[Step 3: AI Prospect Research]
     D --> E[Step 4: Email Verification]
