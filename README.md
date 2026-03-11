@@ -30,7 +30,7 @@ Large scale automation system that scrapes supplier product data, optimizes with
 [Woocommerce Product Lister](https://github.com/sah-automation/woocommerce-product-lister)
 ```mermaid
 graph TD
-    A[LuxeDecor Website] -->|Browser Automation| B(Automa Scraper)
+    A[Supplier Website] -->|Browser Automation| B(Automa Scraper)
     B -->|Structured Extraction| C[data/LuxeDecor2Woo-listing-data.csv]
     C -->|Input| D(Google Colab Notebook / Python)
     D -->|WooCommerce REST API| E[WooCommerce Store]
