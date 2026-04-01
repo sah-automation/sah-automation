@@ -15,17 +15,66 @@ I build automation systems that help businesses scale operations using AI, APIs,
 
 ## Featured Projects
 
+### WooCommerce Inventory Management Automation
+An end-to-end automation solution built with n8n to streamline inventory management between WooCommerce and Google Sheets.
+[WooCommerce Inventory Management Automation](https://github.com/sah-automation/woocommerce-inventory-management-automation)
+```mermaid
+graph TD
+    subgraph External_Triggers [External Triggers]
+        WC[WooCommerce Webhook]
+        CRON[Daily 8AM Schedule]
+        Tally[Tally Restock Form]
+        Approve[Manual Approval Webhook]
+    end
+
+    subgraph n8n_Logic [n8n Orchestration]
+        Deduct[Stock Deduction Logic]
+        Monitor[Low Stock Monitoring]
+        Restock[Restock Processing]
+        Error[Global Error Handler]
+    end
+
+    subgraph Storage [Storage / Database]
+        GS_Inv[(Google Sheets: Inventory)]
+        GS_Log[(Google Sheets: Order Logs)]
+        GS_Err[(Google Sheets: Error Logs)]
+    end
+
+    subgraph Notifications [Notifications & Comms]
+        Gmail[Gmail: Admin/Suppliers]
+        Slack[Slack: Team Alerts]
+    end
+
+    WC --> Deduct
+    Deduct --> GS_Inv
+    Deduct --> GS_Log
+    
+    CRON --> Monitor
+    Monitor --> GS_Inv
+    Monitor --> Gmail
+
+    Tally --> Restock
+    Restock --> GS_Inv
+    Restock --> Slack
+    Restock --> Gmail
+
+    Approve --> Restock
+    
+    n8n_Logic -.-> Error
+    Error --> GS_Err
+    Error --> Gmail
+    Error --> Slack
+```
+
 ### Email Marketing Automation
 N8N workflows designed to automate a multi-step cold email outreach campaign. It uses Google Sheets as a central tracking system and Gmail for deliverability.
 [Email Outreach Automation with n8n](https://github.com/sah-automation/email-marketing-automation-n8n)
 
 ### AI Wordpress Blog Automation
-
 An advanced n8n workflow that automates the entire content lifecycle: from SEO-driven research and planning to professional writing, styled HTML formatting, and WordPress publishing.
 [WordPress Auto-Blogging with n8n](https://github.com/sah-automation/wordpress-auto-blogger)
 
 ### Woocommerce Product Automation System
-
 Large scale automation system that scrapes supplier product data, optimizes with AI, and publishes to WooCommerce using REST API. This system streamlines the process of extracting complex product details, including variations, attributes, and high-quality images.
 [Woocommerce Product Lister](https://github.com/sah-automation/woocommerce-product-lister)
 ```mermaid
@@ -50,7 +99,6 @@ graph TD
 ```
 
 ### Google Maps Lead Generation Automation
-
 An automated, end-to-end lead generation pipeline built on n8n. It intelligently sources business leads from Google Maps, conducts deep prospect research using Google Gemini, and verifies email deliverability via the Reoon API.
 [AI-Powered Lead Generation Engine](https://github.com/sah-automation/b2b-lead-generation)
 ```mermaid
@@ -63,7 +111,6 @@ graph TD
 ```
 
 ### Ecommerce AI Voice Assistant
-
 An advanced AI-powered voice assistant designed for ecommerce store. This system leverages Vapi for high-fidelity voice interactions and n8n for robust backend automation, integrating directly with WooCommerce and multiple AI models.
 [Ecommerce AI Voice Assistant](https://github.com/sah-automation/ecommerce-AI-voice-assistant)
 ```mermaid
