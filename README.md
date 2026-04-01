@@ -16,8 +16,7 @@ I build automation systems that help businesses scale operations using AI, APIs,
 ## Featured Projects
 
 ### WooCommerce Inventory Management Automation
-An end-to-end automation solution built with n8n to streamline inventory management between WooCommerce and Google Sheets.
-[WooCommerce Inventory Management Automation](https://github.com/sah-automation/woocommerce-inventory-management-automation)
+An end-to-end automation solution built with n8n to streamline inventory management between WooCommerce and Google Sheets. [WooCommerce Inventory Management Automation](https://github.com/sah-automation/woocommerce-inventory-management-automation)
 ```mermaid
 graph TD
     subgraph External_Triggers [External Triggers]
