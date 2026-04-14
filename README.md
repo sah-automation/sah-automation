@@ -245,6 +245,7 @@ Workflow Automation roles
 ## Workflow Overview
 
 ![automa-product-scraper](screenshots/automa-product-scraper.png)
+![customer-support-ticket-management-step1](screenshot/Step1.png)
 ![email-opt-out](screenshots/email-opt-out.png)
 ![first-email-workflow](screenshots/first-email-workflow.png)
 ![first-follow-up-email-workflow](screenshots/first-follow-up-email-workflow.png)
