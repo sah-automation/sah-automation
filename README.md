@@ -142,6 +142,30 @@ graph TD
 ### Email Marketing Automation
 N8N workflows designed to automate a multi-step cold email outreach campaign. It uses Google Sheets as a central tracking system and Gmail for deliverability.
 [Email Outreach Automation with n8n](https://github.com/sah-automation/email-marketing-automation-n8n)
+```mermaid
+graph TD
+    A[Google Sheet: Lead Data] --> B{Initial Outreach Workflow}
+    B -->|Check| C[Sent Email#1?]
+    C -->|No| D[Send Personalized Gmail]
+    D --> E[Update Sheet: Sent=Yes, Message ID]
+    C -->|Yes| F[Next Lead]
+
+    E --> G{Follow-up Workflow #1}
+    G -->|Check| H[Replied?]
+    H -->|No| I[Send Threaded Email #2]
+    I --> J[Update Sheet: Sent=Yes, Message ID]
+    H -->|Yes| K[Stop Automation]
+
+    J --> L{Follow-up Workflow #2}
+    L -->|Check| M[Replied?]
+    M -->|No| N[Send Threaded Email #3]
+    N --> O[Update Sheet: Sent=Yes]
+    M -->|Yes| P[Stop Automation]
+
+    Q[Unsubscribe Link] --> R{Opt-Out Webhook}
+    R --> S[Update Sheet: Opted Out=Yes]
+    S --> T[Stop All Workflows]
+```
 
 ### Google Maps Lead Generation Automation
 An automated, end-to-end lead generation pipeline built on n8n. It intelligently sources business leads from Google Maps, conducts deep prospect research using Google Gemini, and verifies email deliverability via the Reoon API.
