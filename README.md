@@ -9,12 +9,33 @@ I build automation systems that help businesses scale operations using AI, APIs,
 • Workflow Automation (n8n)\
 • LLM Integrations\
 • RAG (Retrieval Augmented Generation)\
+• PostgreSQL\
 • Rest API\
 • Web Scraping & Data Pipelines\
 • Lead Generation & Email Marketing System\
 • Error Handling, Human-in-the-Loop (HITL), Secure & Governed AI Agentic Systems
 
 ## Featured Projects
+
+### Employee Onboarding Management Automation
+This Onboarding system automates the end-to-end journey of a new hire in Microsoft environment, from initial request submission to IT provisioning and final welcome. It eliminates manual overhead, ensures compliance through multi-stage approvals, and provides full transparency via a centralized dashboard [Employee Onboarding Management Automation](https://github.com/sah-automation/employee-onboard-management-automation)
+```mermaid
+stateDiagram-v2
+    [*] --> Submitted
+    Submitted --> HR_Review
+    HR_Review --> Rejected: HR Rejects
+    HR_Review --> Parallel_Approval: HR Approves
+    state Parallel_Approval {
+        [*] --> IT_Approval
+        [*] --> Manager_Approval
+        IT_Approval --> IT_Approved
+        Manager_Approval --> Mgr_Approved
+    }
+    IT_Approved --> Provisioning: Both Approved
+    Mgr_Approved --> Provisioning: Both Approved
+    Provisioning --> Completed
+    Rejected --> [*]
+```
 
 ### AI-Human Hybrid Customer Support Management
 Production-ready n8n workflow that manages customer support tickets from multiple channels (Gmail, WhatsApp, Typeform, Tally, and custom webhooks). It leverages AI (Google Gemini) with Retrieval-Augmented Generation (RAG) to classify issues, check order statuses in WooCommerce, and draft professional responses for human review [AI-Human Hybrid Customer Support Management](https://github.com/sah-automation/customer-support-ticket-management)
